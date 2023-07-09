@@ -1,6 +1,6 @@
 # html-canvas-rain-animation
+<img width="467" alt="Screenshot (769)" src="https://github.com/a2rp/html-canvas-rain-animation/assets/5670738/c72ca2fc-96cd-47f0-877e-250f26e6076b">
 
-        <img width="467" alt="Screenshot (769)" src="https://github.com/a2rp/html-canvas-rain-animation/assets/5670738/953b05c1-29ce-4df1-b6bc-448b8abf5972">
         <style>
             * {
                 padding: 0;
