@@ -1,11 +1,6 @@
 # html-canvas-rain-animation
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>a2rp: canvas rain</title>
+        <img width="467" alt="Screenshot (769)" src="https://github.com/a2rp/html-canvas-rain-animation/assets/5670738/953b05c1-29ce-4df1-b6bc-448b8abf5972">
         <style>
             * {
                 padding: 0;
@@ -24,10 +19,7 @@
                 background-color: #fff;
             }
         </style>
-    </head>
-    <body>
         <div class="container">
-        <img width="467" alt="Screenshot (769)" src="https://github.com/a2rp/html-canvas-rain-animation/assets/5670738/953b05c1-29ce-4df1-b6bc-448b8abf5972">
 
             <canvas class="canvas">canvas not supported</canvas>
         </div>
@@ -82,5 +74,3 @@
             };
             animate();
         </script>
-    </body>
-</html>
