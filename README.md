@@ -3,6 +3,10 @@
 
 <img width="467" alt="Screenshot (769)" src="https://github.com/a2rp/html-canvas-rain-animation/assets/5670738/953b05c1-29ce-4df1-b6bc-448b8abf5972">
 
+
+
+
+<br />
 <!DOCTYPE html>
 <html lang="en">
     <head>
