@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./public/favicon.ico" />
+  <link rel="stylesheet" href="./styles.css" />
+  <meta name="theme-color" content="#07111d" />
+  <meta name="description" content="A lightweight HTML canvas rain animation with a focused, responsive interface." />
+  <meta property="og:title" content="Canvas Rain Animation" />
+  <meta property="og:description" content="A lightweight rain particle animation built with HTML canvas, CSS, and JavaScript." />
+  <meta property="og:image" content="./public/preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="./public/preview.png" />
+  <title>Canvas Rain Animation</title>
+</head>
+<body>
+  <canvas class="rain-canvas" aria-label="Animated rain particle background"></canvas>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Canvas Rain Animation home">
+      <img src="./public/logo.png" alt="Ashish Ranjan logo" />
+      <span><small>CANVAS STUDY</small><strong>Rain Animation</strong></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#controls">Controls</a>
+    </nav>
+    <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#controls">Controls</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">HTML canvas experiment</p>
+      <h1 id="hero-title">Rain in motion.</h1>
+      <p class="hero-copy">A simple particle study that turns a blank canvas into a calm, responsive rain scene.</p>
+      <div class="actions" id="controls">
+        <button class="primary-button" type="button" data-action="pause">Pause rain</button>
+        <a class="secondary-button" href="#about">Explore the details</a>
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div>
+        <p class="eyebrow">Small, focused, reusable</p>
+        <h2 id="about-title">A canvas animation with a clear purpose.</h2>
+      </div>
+      <div class="feature-grid">
+        <article><span>01</span><h3>Responsive canvas</h3><p>The animation adapts to viewport size and pixel density without extra libraries.</p></article>
+        <article><span>02</span><h3>Lightweight particles</h3><p>Each drop has a small random variation for a natural, continuous rhythm.</p></article>
+        <article><span>03</span><h3>Simple controls</h3><p>Pause the scene whenever you want to inspect the quiet details behind the motion.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <strong class="footer-brand"><img src="./public/logo.png" alt="Ashish Ranjan logo" />Canvas Rain</strong>
+      <nav class="social-links" aria-label="Developer and support links">
+        <a href="https://www.ashishranjan.net/" target="_blank" rel="noopener noreferrer" aria-label="Portfolio" title="Portfolio">◎</a>
+        <a href="https://github.com/a2rp" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">◈</a>
+        <a href="https://codepen.io/ash1198" target="_blank" rel="noopener noreferrer" aria-label="CodePen" title="CodePen">◌</a>
+        <a href="https://www.linkedin.com/in/aashishranjan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">in</a>
+        <a href="https://www.facebook.com/theash.ashish/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">f</a>
+        <a href="https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube">▶</a>
+        <a href="mailto:ash.ranjan09@gmail.com" aria-label="Email" title="Email">✉</a>
+        <a href="https://a2rp-donation-page.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Support" title="Support">♥</a>
+        <a href="https://buymeacoffee.com/a2rp" target="_blank" rel="noopener noreferrer" aria-label="Buy Me a Coffee" title="Buy Me a Coffee">☕</a>
+        <a href="https://patreon.com/a2rp" target="_blank" rel="noopener noreferrer" aria-label="Patreon" title="Patreon">●</a>
+      </nav>
+    </div>
+    <p class="copyright">Copyright &copy; <span id="year"></span> <a href="https://www.ashishranjan.net/" target="_blank" rel="noopener noreferrer">Ashish Ranjan</a></p>
+  </footer>
+  <button class="top-button" type="button" aria-label="Scroll to top">↑</button>
+  <script src="./script.js"></script>
+</body>
+</html>

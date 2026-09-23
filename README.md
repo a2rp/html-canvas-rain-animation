@@ -1,79 +1,34 @@
-# html-canvas-rain-animation
-<img width="467" alt="Screenshot (769)" src="https://github.com/a2rp/html-canvas-rain-animation/assets/5670738/c72ca2fc-96cd-47f0-877e-250f26e6076b">
+# Canvas Rain Animation
 
-        <style>
-            * {
-                padding: 0;
-                margin: 0;
-                box-sizing: border-box;
-            }
-            .container {
-                /* border: 1px solid #f00; */
-                overflow: hidden;
-                height: 100vh;
-            }
+![Canvas Rain Animation preview](screenshot.png)
 
-            .canvas {
-                width: 100%;
-                height: 100%;
-                background-color: #fff;
-            }
-        </style>
-        <div class="container">
+A lightweight, responsive rain particle animation built with the HTML canvas API, CSS, and plain JavaScript. The original canvas study remains the core experience, now presented in a small portfolio-ready page.
 
-            <canvas class="canvas">canvas not supported</canvas>
-        </div>
+## Features
 
-        <script>
-            const canvas = document.querySelector(".canvas");
-            const context = canvas.getContext("2d");
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
+- Responsive canvas particle animation
+- Pause and resume control
+- Fixed branded header with a small-screen menu
+- Short explanation of the canvas approach
+- Icon-only developer and support links in the footer
+- Floating scroll-to-top control
 
-            let particlesArray = [];
-            const numberOfParticles = window.innerWidth * 2;
+## Tech Stack
 
-            class Particle {
-                constructor() {
-                    this.x = Math.random() * canvas.width;
-                    this.y = 0;
-                    this.speed = 0;
-                    this.velocity = Math.random() * 3;
-                    this.size = Math.random() * 1.5 + 0.5;
-                }
-                update() {
-                    this.y += this.velocity;
-                    if (this.y >= canvas.height) {
-                        this.y = 0;
-                        this.x = Math.random() * canvas.width;
-                    }
-                }
-                draw() {
-                    context.beginPath();
-                    context.fillStyle = "rgba(0,0,0,1)";
-                    context.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                    context.fill();
-                }
-            }
-            function init() {
-                for (let i = 0; i < numberOfParticles; ++i) {
-                    particlesArray.push(new Particle());
-                }
-            }
-            init();
+HTML, CSS, JavaScript, and the Canvas 2D API.
 
-            const animate = () => {
-                context.globalAlpha = 0.05;
-                context.fillStyle = "rgba(255,255,255,1)";
-                context.fillRect(0, 0, canvas.width, canvas.height);
-                for (let i = 0; i < particlesArray.length; ++i) {
-                    particlesArray[i].update();
-                    particlesArray[i].draw();
-                }
-                requestAnimationFrame(animate);
-            };
-            animate();
-        </script>
+## Run locally
+
+Open `index.html` in a browser or serve the folder with any static file server.
+
+## Deployment
+
+```bash
+npm run build
+npm run deploy
+```
+
+Live app: [https://a2rp.github.io/html-canvas-rain-animation/](https://a2rp.github.io/html-canvas-rain-animation/)
 
 ## Links
 

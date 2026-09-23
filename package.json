@@ -1,0 +1,11 @@
+{
+  "name": "html-canvas-rain-animation",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "node --check script.js",
+    "lint": "node --check script.js",
+    "deploy": "npx --yes gh-pages -d . -b gh-pages"
+  }
+}
