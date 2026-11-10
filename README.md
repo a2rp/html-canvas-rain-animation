@@ -30,6 +30,8 @@ npm run deploy
 
 Live app: [https://a2rp.github.io/html-canvas-rain-animation/](https://a2rp.github.io/html-canvas-rain-animation/)
 
+This is a static site with no bundler. The build and lint scripts check the JavaScript syntax, and the deploy script publishes the repository root to GitHub Pages.
+
 ## Links
 
 - Portfolio: [https://www.ashishranjan.net](https://www.ashishranjan.net)

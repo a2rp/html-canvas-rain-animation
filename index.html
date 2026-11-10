@@ -7,15 +7,19 @@
   <link rel="stylesheet" href="./styles.css" />
   <meta name="theme-color" content="#07111d" />
   <meta name="description" content="A lightweight HTML canvas rain animation with a focused, responsive interface." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://a2rp.github.io/html-canvas-rain-animation/" />
   <meta property="og:title" content="Canvas Rain Animation" />
   <meta property="og:description" content="A lightweight rain particle animation built with HTML canvas, CSS, and JavaScript." />
-  <meta property="og:image" content="./public/preview.png" />
+  <meta property="og:image" content="https://a2rp.github.io/html-canvas-rain-animation/public/preview.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="./public/preview.png" />
+  <meta name="twitter:title" content="Canvas Rain Animation" />
+  <meta name="twitter:description" content="A lightweight rain particle animation built with HTML canvas, CSS, and JavaScript." />
+  <meta name="twitter:image" content="https://a2rp.github.io/html-canvas-rain-animation/public/preview.png" />
   <title>Canvas Rain Animation</title>
 </head>
 <body>
-  <canvas class="rain-canvas" aria-label="Animated rain particle background"></canvas>
+  <canvas class="rain-canvas" aria-hidden="true"></canvas>
   <header class="site-header">
     <a class="brand" href="#home" aria-label="Canvas Rain Animation home">
       <img src="./public/logo.png" alt="Ashish Ranjan logo" />
@@ -26,8 +30,8 @@
       <a href="#about">About</a>
       <a href="#controls">Controls</a>
     </nav>
-    <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
-    <nav class="mobile-nav" aria-label="Mobile navigation">
+    <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-navigation" data-open="false"><span aria-hidden="true"></span></button>
+    <nav class="mobile-nav" id="mobile-navigation" aria-label="Mobile navigation">
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#controls">Controls</a>
@@ -76,7 +80,7 @@
     </div>
     <p class="copyright">Copyright &copy; <span id="year"></span> <a href="https://www.ashishranjan.net/" target="_blank" rel="noopener noreferrer">Ashish Ranjan</a></p>
   </footer>
-  <button class="top-button" type="button" aria-label="Scroll to top">↑</button>
+  <button class="top-button" type="button" aria-label="Scroll to top" disabled tabindex="-1"><span aria-hidden="true">Top</span></button>
   <script src="./script.js"></script>
 </body>
 </html>
