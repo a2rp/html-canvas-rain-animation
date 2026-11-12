@@ -84,7 +84,6 @@ function syncAnimation() {
 
 function updatePauseControl() {
     pauseButton.textContent = paused ? "Resume rain" : "Pause rain";
-    pauseButton.setAttribute("aria-pressed", String(paused));
 }
 
 function setMenuOpen(open, restoreFocus = false) {
